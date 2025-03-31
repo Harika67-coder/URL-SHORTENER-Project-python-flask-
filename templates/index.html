@@ -22,7 +22,6 @@
     </tr>
     {% for url_entry in shortened_urls %}
 <tr>
-  {{ request.host_url }}
   <td><a rel="noreferrer" href="{{ url_entry.longUrl }}" target="_blank">{{ url_entry.longUrl }}</a></td>
   <td><a rel="noreferrer" href="{{ request.host_url }}{{ url_entry.shortUrl }}" target="_blank">{{ request.host_url }}{{ url_entry.shortUrl }}</a></td>
 </tr>
