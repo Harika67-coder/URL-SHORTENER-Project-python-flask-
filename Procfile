@@ -1,1 +1,1 @@
-web: gunicorn e-commerce-webapp.app:app
+web: gunicorn url-shortener.app:app
